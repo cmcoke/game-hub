@@ -15,13 +15,9 @@ const App = () => {
       </GridItem>
       {/* Show above='lg' -- only shows the aside element on devices with a screen width of 992px and more. */}
       <Show above="lg">
-        <GridItem area="aside" bg="gold">
-          Aside
-        </GridItem>
+        <GridItem area="aside">Aside</GridItem>
       </Show>
-      <GridItem area="main" bg="dodgerblue">
-        Main
-      </GridItem>
+      <GridItem area="main">Main</GridItem>
     </Grid>
   );
 };
