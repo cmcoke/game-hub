@@ -2,11 +2,19 @@ import { useEffect, useState } from "react";
 import apiClient from "../services/api-client";
 import { CanceledError } from "axios";
 
+// defines the platform objects
+export interface Platform {
+  id: number;
+  name: string;
+  slug: string;
+}
+
 // defines the array of objecsts 'results'  from 'https://api.rawg.io/api/games'
 export interface Game {
   id: number;
   name: string;
   background_image: string;
+  parent_platforms: { platform: Platform }[];
 }
 
 // defines the response object from 'https://api.rawg.io/api/games'
