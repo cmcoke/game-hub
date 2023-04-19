@@ -1,4 +1,5 @@
 import { Grid, GridItem, Show } from "@chakra-ui/react";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   return (
@@ -9,8 +10,8 @@ const App = () => {
         lg: `"nav nav" "aside main"` // layout for devices with a screen width of 992px and more
       }}
     >
-      <GridItem area="nav" bg="coral">
-        Nav
+      <GridItem area="nav">
+        <NavBar />
       </GridItem>
       {/* Show above='lg' -- only shows the aside element on devices with a screen width of 992px and more. */}
       <Show above="lg">
