@@ -3,9 +3,10 @@ import apiClient from "../services/api-client";
 import { CanceledError } from "axios";
 
 // defines the array of objecsts 'results'  from 'https://api.rawg.io/api/games'
-interface Game {
+export interface Game {
   id: number;
   name: string;
+  background_image: string;
 }
 
 // defines the response object from 'https://api.rawg.io/api/games'
